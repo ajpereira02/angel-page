@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Only stick if you can fit */
+@media (min-height: 0px) {
+  .menu {
+    position: static;
+    top: 0;
+  }
+}
+
+.logo {
+  margin: 20px;
+  color: black;
+  padding-left: 80px;
+  background: white;
+}
+
+.menu {
+  float: right;
+  margin: -39px;
+  display: inline-block;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 60px;
+  color: black;
+  font-size: 18px;
+}
+
+.menu ul li :hover {
+  color: black;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+body {
+  font-family: verdana, sans-serif;
+  margin: 0;
+}
+
+.slideshow-container {
+  width: 1000px;
+  position: absolute;
+  margin: 200px;
+  height: 500px;
+}
+
+img {
+  width: 1000px;
+  height: 500px;
+}
+
+.photo {
+  margin-bottom: 100%;
+}
+
+.numbers {
+  position: absolute;
+  top: 0;
+  color: #f2f2f2;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.myslides {
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px;
+  margin-top: -22px;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: grey;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.active, .dot:hover {
+  background-color: #333;
+}
+
+.iframe {
+  margin-top: 800px;
+  margin-left: 200;
+  padding-left: 200px;
+}
+
+.form-left {
+  margin-top: 400px;
+  width: 300px;
+}
+
+.contact-us {
+  align-items: center;
+  margin-left: 600px;
+  margin-top: 100px;
+}
+
+.forms-right {
+  color: white;
+  margin-left: 400px;
+}
+
+.forms {
+  background-color: black;
+  color: white;
+}
+
+.submit {
+  margin-left: 456px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu {
+    width: 50%;
+    float: right;
+  }
+
+  .fluid {
+    width: 50%;
+    padding: 20px ;
+  }
+
+  .iframe {
+    width: 40%;
+    padding: 20px;
+  }
+
+
+
+}
